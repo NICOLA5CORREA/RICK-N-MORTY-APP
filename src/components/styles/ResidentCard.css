@@ -1,0 +1,88 @@
+.resident {
+    background-color: var(--color-card);
+    color: white;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 0.8em;
+    overflow: hidden;
+    margin: 1em;
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.55);
+}
+
+.resident:hover {
+    transform: scale(0.9);
+}
+
+.resident__header {
+    position: relative;
+}
+
+.resident__image {
+    width: 100%;
+}
+
+.resident__status {
+    width: 32%;
+    background-color: var(--color-card);
+    position: absolute;
+    top: 1.5em;
+    padding: 0.2em;
+    padding-left: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    border-radius: 0 0.8em 0.8em 0;
+}
+
+.resident__status-circle {
+    width: 0.8em;
+    aspect-ratio: 1;
+    background-color: #aaa;
+    border-radius: 50%;
+}
+
+.Alive {
+    background-color: var(--color-green);
+}
+
+.Dead {
+    background-color: rgba(179, 31, 31, 0.795);
+}
+
+.resident__body {
+    padding: 1em 0.8em 2em;
+}
+
+.resident__name {
+    color: var(--color-green);
+    text-align: center;
+}
+
+.resident__line {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-color:#aaa4;
+}
+
+.resident__list {
+    display: grid;
+    gap: 0.8em;
+}
+.resident-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.resident-label {
+    color: #aaa7;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.resident-label-value {
+    padding-left: 1em;
+    text-transform: uppercase;
+}

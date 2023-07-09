@@ -2,12 +2,12 @@ import React from 'react'
 
 const LocationInfo = ({location}) => {
   return (
-    <section>
-    <h2>{location?.name}</h2>
-    <ul>
-        <li><span>Type:</span><span>{location?.type}</span></li>
-        <li><span>Dimension:</span><span>{location?.dimension}</span></li>
-        <li><span>Population:</span><span>{location?.residents.length}</span></li>
+    <section className="location-info">
+    <h2 className="title-info">{location?.name}</h2>
+    <ul className="location-type">
+      <li className="location-type-value"> <span className="type">Type:</span> <span >{location?.type}</span></li>
+        <li className="location-type-value"> <span className="type">Dimension:</span> <span >{location?.dimension}</span></li>
+        <li className="location-type-value"> <span className="type">Population:</span> <span >{location?.residents.length}</span></li>
     </ul>
     </section>
   )
