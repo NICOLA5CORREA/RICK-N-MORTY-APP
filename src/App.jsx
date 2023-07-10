@@ -6,6 +6,7 @@ import LocationInfo from './components/LocationInfo'
 import ResidentCard from './components/ResidentCard'
 import FormLocation from './components/FormLocation'
 import rickmorty from './assets/rick-morty.png'
+import Loader from './components/Loader'
 // import Pages from './components/Pages'
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
           />
           {
             isLoading 
-            ? (<h2>Loading...</h2>)
+            ? <Loader/>
             : (
               hasError
               ? (<h1>❌ Hey! you must provide an Id from 1 to 126 😵‍💫</h1>)
