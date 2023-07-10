@@ -5,7 +5,7 @@ import getRandomNumber from './servers/getRandomNumber'
 import LocationInfo from './components/LocationInfo'
 import ResidentCard from './components/ResidentCard'
 import FormLocation from './components/FormLocation'
-import rick-morty from './assets/rick-morty.png'
+import rickmorty from './assets/rick-morty.png'
 // import Pages from './components/Pages'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
 
     return (
         <div className="total-container">
-          <img className="header-image" src={rick-morty} alt="header" />
+          <img className="header-image" src={rickmorty} alt="header" />
           <FormLocation 
             setIdLocation={setIdLocation}
           />
