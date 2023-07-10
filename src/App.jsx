@@ -39,7 +39,7 @@ function App() {
 
     return (
         <div className="total-container">
-          <img className="header-image" src="/images/rick-morty.png" alt="header" />
+          <img className="header-image" src="src/images/rick-morty.png" alt="header" />
           <FormLocation 
             setIdLocation={setIdLocation}
           />
