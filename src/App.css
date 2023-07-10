@@ -1,10 +1,19 @@
+h1 {
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+
 .total-container {
     background-color: #05292b;
 
 }
 
-.search-value {
-    width: 15%;
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em;
 }
 
 .resident-container {
@@ -13,10 +22,11 @@
     justify-content: center;
 }
 
-.banner-image {
-    margin: 0 0 0.5em;
+.header-image {
+    margin: 0 auto;
     width: 100%;
-    height: fit-content;
+    aspect-ratio: 7;
+    object-fit: cover;
 }
 
 .location-info {
@@ -24,11 +34,10 @@
     box-shadow: 0 10px 25px rgba(0,0,0,0.55);
     max-width: 500px;
     border-radius: 0.8em;
-    margin: 1em 1em;
-    position: relative;
-    left: 30%;
+    margin: 2em auto;
     padding: 0.5em;
     text-align: center;
+
 }
 
 

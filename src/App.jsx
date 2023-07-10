@@ -5,6 +5,7 @@ import getRandomNumber from './servers/getRandomNumber'
 import LocationInfo from './components/LocationInfo'
 import ResidentCard from './components/ResidentCard'
 import FormLocation from './components/FormLocation'
+// import Pages from './components/Pages'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   const [idLocation, setIdLocation] = useState(getRandomNumber(126))
   const [hasError, setHasError] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+
 
   useEffect(() => {
     const url = `https://rickandmortyapi.com/api/location/${idLocation}`;
@@ -37,7 +39,7 @@ function App() {
 
     return (
         <div className="total-container">
-          <img className="banner-image" src='src\images\rick-morty.png' alt="banner" />
+          <img className="header-image" src='src\images\rick-morty.png' alt="header" />
           
           <FormLocation 
             setIdLocation={setIdLocation}
